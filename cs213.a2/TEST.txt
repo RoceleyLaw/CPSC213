@@ -1,0 +1,11 @@
+Firstly, data a in memory-1000 is initialized to 0xffffffff,
+b in memory-2000 is initialized to 0x00003000. Then register0 is set 
+to be 0x1000, register1 is set to be 0x1500, register2 is set to be the address of b which is 0x2000, and register3 is set to be the address of a which is 0x1000. After loading these value into registers, I store the value in register0 into memory address 0x1000 which is the address of a, successfully assigning value 0x1000 to variable. Also, I try to store indexed b[a] = a.
+
+Through observing the steps shown in SM simulator, it is been proven that my implementation of memory-access instructions is correct.
+
+After storing value into memory, I also test my implementation of ALU instructions in my CPU.java.
+
+I firstly test the move method, which get the value of r0(0x1000) and assign it to r4, then the add method, and method, inc, inca method, dec, deca method, not method, shift left and shift right method and halt method. They are all doing the things I expected it to do and return the correct values. 
+
+Therefore, I conclude that my implementation in CPU.java are correct.
