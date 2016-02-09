@@ -1,0 +1,5 @@
+v = s.z -> x[i]
+
+1. reads value of what s.z points to from memory, which is an address of Struct S, would be s.z -> x[0].
+
+2. reads value of s.z -> x[i] from memory(load indexed).

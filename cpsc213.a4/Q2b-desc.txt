@@ -1,0 +1,4 @@
+v = s.y[i] 
+
+1. reads the value of what s.y points to, which is an address of y[i]
+2. reads the value of y[i]

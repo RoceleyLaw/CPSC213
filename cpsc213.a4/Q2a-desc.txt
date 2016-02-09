@@ -1,0 +1,1 @@
+v = s.x[i] reads the value of s.x[i] from memory
